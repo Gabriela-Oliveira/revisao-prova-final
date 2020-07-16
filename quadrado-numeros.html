@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrado de Números</title>
+</head>
+<body>
+    <!--
+        1º Capturar 5 numeros do usuario ok
+        2º Fazer o quadrado de cada numero ok
+        3º Imprimir na tela o quadrado do mesmo
+    -->
+
+    <script>
+
+        var numeros = [];
+        var pl = '<br>';
+        var ii = 1;
+
+        for(i = 0; i < 5; i++){
+            var numero = parseInt(prompt("Digite uma número: "));
+            numeros.push(numero);
+        }
+        
+        for(i= 0; i < numeros.length; i++){
+            var quadrado = numeros.slice(i,ii) * numeros.slice(i,ii);
+
+            document.write(numeros.slice(i,ii) + '²' + " = " + quadrado + pl);
+            ii++;
+        }
+
+        
+
+    //    document.write(numeros.length+pl);
+    
+    //    document.write(numeros+pl);
+
+    //    document.write(numeros.slice(1,2)+pl);
+
+
+    </script>
+
+</body>
+</html>

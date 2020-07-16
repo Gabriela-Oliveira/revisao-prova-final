@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--
+    1º Criar uma função que receba 2 números
+    2º ver qual é o menor 
+    3º retornar o menor na tela
+-->
+
+<script>
+
+    function numero(){
+        let numero1 = parseInt(prompt("Digite um 1º número: "));
+        let numero2 = parseInt(prompt("Digite um 2º número: "));
+            if(numero1 < numero2){
+                alert("O menor número digitado é: " + numero1);
+            }else if(numero2 < numero1){
+                alert("O menor número digitado é: " + numero2);
+            }else{
+                alert("Os dois número são iguais!");
+            }
+    }
+    document.write(numero());
+
+    // acordo que será cobrado na prova = nível de complexibilidade máximo 8
+
+</script>
+
+</body>
+</html>

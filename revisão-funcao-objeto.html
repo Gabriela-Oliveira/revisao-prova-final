@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão e escopos</title>
+</head>
+<body>
+
+    <script>
+        var nome = "Fulano";
+        var sobreNome = "Da Silva";
+        
+        /* function obterNomeCompleto(){
+            // pode ser muito complexo.
+            return nome + sobreNome;
+        } */
+
+        function obterNomeCompleto(nome, sobreNome){
+            // pode ser muito complexo.
+            return nome + sobreNome;
+        }
+
+        alert(obterNomeCompleto());
+
+        // sou uma função sem parâmetros e não tenho retorno, sou void
+        function mostrarAlerta(){
+            alert('Sou uma mensagem');
+        }
+
+        function mostrarAlerta(mensagem){
+            alert(mensagem);
+        }
+
+        //OBJETOS
+
+        var pessoa = {
+            nome: 'Fulano',
+            idade: 27,
+            preferencias: ['Música', 'Védeo Game','Bombinha de chocolate'],
+            sexo: 'Masculino',
+            habilitado: true,
+        };
+
+    /*  turma.filter((e) => e.idade > 20);          o filter serve para filtrar uma lista de um array
+                                                    esses 3 exemplos são a mesma coisa
+        function encontrarPessoa(pessoa){
+            if(pessoa.idade > 20){
+                return pessoa;
+
+        turma.filter(function(pessoa) {
+            retur pessoa.idade <= 20;
+        });
+            } */
+
+    </script>
+    
+</body>
+</html>

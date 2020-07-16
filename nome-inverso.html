@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de nomes invertido</title>
+</head>
+<body>
+    
+<!--
+    1º perguntar quantos nomes ele deseja inserir na lista
+    2º capturar os nome
+    3º imprimir na tela a lista de nome só que na ordem inversa
+-->
+
+    <script>
+
+        var nomes = [];
+        var quantiaNomes = parseInt(prompt("Quantos nomes você quer inseri na lista?"));
+
+        for(i=0; i < quantiaNomes; i++){
+            nomes = prompt("Digite um nome: ");
+        }
+
+        document.write(nomes.reverse());
+    </script>
+
+</body>
+</html>

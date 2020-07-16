@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salada de frutas</title>
+</head>
+<body>
+    
+    <script>
+
+        var saladaFrutas = [];
+
+        var fruta = prompt('Digite uma fruta: ').toLowerCase();
+        saladaFrutas.push(fruta);
+
+        var mais = prompt('Deseja adicionar mais alguma fruta - sim - não').toLowerCase();
+            while(mais == 'sim'){
+                fruta = prompt('Digite uma fruta: ').toLowerCase();
+                saladaFrutas.push(fruta);
+
+                mais = prompt('Deseja adicionar mais alguma fruta - sim - não').toLowerCase();
+            }
+                document.write('Sua salada de frusta está pronta!' + '<br>' + 'Frutas: ' + '<br>');
+                document.write(saladaFrutas);
+
+        //alert(saladaFrutas);
+
+    </script>
+
+</body>
+</html>

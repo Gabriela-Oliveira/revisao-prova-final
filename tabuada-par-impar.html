@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada par e impar</title>
+</head>
+<body>
+    
+    <script>
+
+        var n1 = parseInt(prompt('De qual número queres a tabuada? '));
+        var n2 = parseInt(prompt('Até que número queres a tabuada? '));
+
+        for(i = 0; i <= n2; i++ ){
+            var resutado = n1*i;
+                if(resutado % 2 == 0){
+                    document.write(n1 + ' x ' + i + ' = ' + resutado + ' PAR ' + '<br>')
+                }else{
+                    document.write(n1 + ' x ' + i + ' = ' + resutado + ' IMPAR ' + '<br>')
+                }
+        }
+
+    </script>
+
+</body>
+</html>

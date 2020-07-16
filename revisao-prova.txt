@@ -1,0 +1,120 @@
+Caracteristica do JavaScript   
+
+                1º JavaScript não é Java.
+                2º JavaScript também pode ser chamada de EcmaScript.
+                3º JavaScript é uma linguagem CaseSensitive. (CS).
+                4º JavaScript é uma linguagem interpretada. 
+                5º JavaScript é uma linguagem com tipagem simple (Não preciso passar os tipos 
+                das variáveis).
+                6º Acordo: Sempre terminarutilizando ; no final.
+
+                1º Sempre dar nomes das variáveis de acordo com o que vão receber.
+                2º Sempre criar nomes de variáveis e funções, em cameCase.
+                3º Sempre manter o código indentado e separado.
+                4º Sempre utilizar ; ao final de cada instrução.
+
+Regras:
+
+                1º Sempre criar tags em caixa baixa (minuscula, lowerCase)
+                2º Sempre indentar o código (Arrumar a casa)
+                3º Sempre fechar as tags. 
+                4º Sempre fechar as tags na ordem correta.
+
+Inputs / Outputs
+
+                outputs (saidas)
+                alert()
+                console.log()
+                documento.write()
+
+                inputs (ENTRADAS)
+                prompt()
+
+EPER (entender, planejar(fase mais importante), executar e revisar(fase de teste da aplicação))
+*** serve para organizar melhor as idéias, conseguir entender e executar, facilitar, ter menos erros ***
+
+ Case Styles:
+
+                camelCase: JS, Java ex: nomeAluno
+                PascalCase: C# ex: NomeAluno
+                snake_case: Python - tudo minusculo, separando as palavras por _
+                kibab-case: HTML, CSS, JS - tudo minusculo, separando por - (HTML -> propriedades)
+
+ Tipos de dados JavaScript básicos:
+            
+                String - texto
+                Number - numero (pode ser inteiros ou flutuantes)
+                Boolean - condicionais (true ou false)
+                Object - objetos
+                Array - matriz
+                Underfined - indefinido (não tem tipo)
+
+  Operadores Lógicos
+
+            && (e) -> ambas as condições tem que ser verdade
+            == (igual) -> ambas tem que ser iguais
+            || (ou) -> uma das opções tem que ser verdade
+            != -> diferente
+
+            Condicionais:
+            if e else: utilizados para fazer testes.
+            *Somente na concatenação que ele vai tentar juntar em forma de texto. 
+            Em outra operações ele vai tentar converter automagicamente antes de executar
+
+HTML
+
+            <html> versão
+
+            <head>
+                <title>Aula 07-07-2020</title>
+                <!-- Aqui são carregados os "scripts", fonts e Css de terceiros 
+                * Tudo o que o usuário não vê!
+                title -> titulo da aba da página
+                -->
+            </head>
+
+            <body>
+                <!-- 
+                *Tudo o que o usuário vê!
+                strong -> negrito
+                em -> itálico
+                -->
+                <p>Eu sou um <strong><em>paragrafo!</em></strong></p>
+
+                <strong> deixa um determina texto em negrito </strong>
+                <em> deixa um determina texto em italico </em>
+                alert('"Sou um alerta!"');
+                style="color:blue --> mudar cor de texto
+
+    do-while -> enquanto(é igual o while, porem esse executa o cod. pelo menos uma vez)  
+
+            do{
+            document.write('Fui executato!')
+
+                }while(cont > 0)
+
+                console.log('Saiu do looping!');
+
+    Array      -> É uma lista, sem especificações.
+
+    ex:        var alunos = ['Gabriela', 'Bianca', 'Paulo'] 
+    
+    Objetos JS -> são uma forma de representação de coisas ou objetos reais em forma de códigos.
+    *** é parecido com um array, porem o objeto, tem definições ***
+
+    ex:         var pessoa = {[
+                    nome: "Fulano",
+                    idade: 25,
+                    andar: andar,
+                    falar: falar,
+                    correr: correr
+                },
+                {
+                    nome: "Ciclano",
+                    idade: 25,
+                    andar: andar,
+                    falar: falar,
+                    correr: correr
+                }]
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+        <= 1 = iniciante
+        >=2 <=3 intermediario
+        >3 <=6 avançado
+        >7 Jadi Master
+    --> 
+    
+    <script>
+
+        var anos = parseInt(prompt("Quantos anos de estudo? "));
+
+        if(anos <= 1){
+            alert('Iniciante');
+        }else if(anos >= 2 && anos <= 3){
+            alert('Intermediário');
+        }else if(anos > 3 && anos <= 6){
+            alert('Avançado');
+        }else{
+            alert('Jadi Master');
+        }
+
+
+    </script>
+
+</body>
+</html>

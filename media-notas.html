@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Notas</title>
+</head>
+<body>
+
+    <!--
+        1º Pegar notas e quantidade da mesma digitadas pelo usuário ok
+        2º Somar as notas ok
+        3º Fazer a média ok 
+        4º Imprimir na tela as notas digitadas + a soma + a média ok
+    -->
+    
+    <script defer>
+
+        var notas = [];
+        var quantidadeNotas = parseInt(prompt("Quantas notas deseja digitar para saber a média?"));
+
+            for(i = 0; i < quantidadeNotas; i++){
+                var nota = parseInt(prompt("Digite uma nota: "));
+                notas.push(nota);
+                
+            }
+
+            document.write(`Você digitou ${quantidadeNotas} notas. <br> São elas: ${notas.join(',')}.<br>`);
+
+            var totalNotas = notas.reduce((totalNotas, notas) => totalNotas + notas, 0);
+
+                           
+            //    for(i = 0; i < notas.length; i++){
+            //        totalNotas += parseInt(notas[i]);
+            //    }
+
+                var media = Math.round(totalNotas / quantidadeNotas);    
+
+            document.write(`A soma das mesmas é: ${totalNotas}. <br>
+            Sendo assim a sua média é de: ${media}.`);
+        
+
+    </script>
+
+
+</body>
+</html>

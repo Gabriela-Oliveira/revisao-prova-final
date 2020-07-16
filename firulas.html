@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firulas - Vamos brincar na tela</title>
+</head>
+<body>
+    
+    <form> <!-- cria formulários-->
+    <label for="email">Email</label> <!-- aparece uma escrita na frente da caixinha de texto-->
+    <input id="email" type="email" placeholder="exemplo@exemplo.com" required> <br> <br>   <!-- type="text" 
+    é uma propriedade, cria uma caixa de texto /// placeholder -> marca d'agua 
+    - id é uma identificação do input-->
+
+    <label for="senha">Senha</label> 
+    <input id="senha" type="password" placeholder="* * * * * * * * * *" required> <br> <br> <br> <!--required -> diz que o campo é obrigatório-->>
+    
+    <label for="lembrar">Lembre-me</label> 
+    <input id="lembrar" type="checkbox" required>
+    <!--<input type="submit" value="Entrar"> -->
+
+    <!-- <button type="submit">Entrar</button>
+    <button type="reset">Limpar</button> -->
+
+    <button type="button" onclick="teste()">Entrar</button> <!-- onclick é um evento -> quando a um clique faz alguma coisa-->
+    <button type="reset">Limpar</button>
+        
+    </form>
+
+   <!--  <input type="number" min="0" max="12" > numero minimo 0 e o numero maximo 12-->
+    <!-- <input type="text" maxlength="5" > --> <!--limita a quantidade de caracter-->
+
+    <script>
+
+        var email = document.getElementById('email');
+        var senha = document.getElementById('senah');
+
+        function login(){
+
+            if(verificarAcesso(email.value, senha.value)){
+                alert('Bem vindo ao nosso sistema!')
+            }else{
+                alert('Usuario ou senha inválido!')
+            }
+        }
+
+        function verificarAcesso(email,senha){
+            if(email.toLowerCase() == 'adimin@adimin.com' && senha == '123'){
+                return true;
+            }
+            return false;
+        }
+
+    </script>
+
+</body>
+</html>

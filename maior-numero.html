@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O maior número</title>
+</head>
+
+<!-- 
+    1º pegar 5 numeros do usuário ok
+    2º criar caixa de texto para a receepção dos numeros do usuário
+    3º verificar qual é o maior ok
+    4º exibir o maior na tela ok
+ -->
+
+   <!--  <p>Digite cinco número:</p>
+    <input type="text" id="numeros"><br>
+    <input type="button" value="Mostre o maior número" onclick="mostraMaiorNumero()">
+    <p id= "maiorNumeros"></p>
+    <p><em>* os número devem ser dseparados por vígula.</em></p>
+
+<body> -->
+
+    <!-- <script defer>
+        function mostraMaiorNumero(){
+            var numerosArray = document.getElementById('numeros').value.split(',')
+            var numeroMaior = document.getElementById('maiorNumeros').textContent = "Maior número " + Math.max(...numerosArray)
+        }
+    </script> -->
+   
+    
+   <script>
+
+        var numeros = [];
+        var maiorNumero = 0;
+        
+        for(i = 0; i < 5; i++){
+            var numero = parseInt(prompt("Digite um numero: "));
+                if(numero >= maiorNumero){
+                    maiorNumero = numero;
+                }
+
+                numeros.push(numero);
+        }
+        document.write('Você digitou os número ' + numeros + '<br>');
+        document.write('<br>'+'O maior número é: ' + maiorNumero);
+
+
+    </script>
+
+</body>
+</html>

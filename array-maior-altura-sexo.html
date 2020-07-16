@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+   1º pegar 5 alturas e 5 sexos
+   2º imprimir quantos são masculinos e quantos são femininos
+   3º imprimir qual é a maior altura e de que sexo ela corresponde 
+-->
+
+    <script>
+
+        var alturaF = 0;
+        var alturaM = 0;
+        var m = [];
+        var f = [];
+
+        for(i=0; i < 5; i++){
+            var sexo = prompt("Qual é o sexo da pessoa? f - m ").toLowerCase();
+            var altura = parseFloat(prompt('Qual é a altura da pessoa anterior? '))
+                
+                if(sexo == f){
+                    sexo.push(f);
+                    if(altura >= alturaF && altura <= alturaM){
+                        altura.push(alturaF);
+                    }else{
+                        altura.push(alturaM);
+                    }
+                }
+        }
+        
+
+
+    </script>
+
+</body>
+</html>
